@@ -1,0 +1,325 @@
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Mus'ab</title>
+    <link href="logo-perpustakaan.jpg" rel="icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #1a237e;
+            padding: 1rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background: #283593;
+            border-radius: 4px;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    
+        .login-form {
+            max-width: 400px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #1a237e;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #283593;
+        }
+
+        .transaction-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        .transaction-table th,
+        .transaction-table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        .transaction-table th {
+            background: #f5f5f5;
+        }
+
+        .footer-bottom {
+        text-align: center;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        }
+
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-perpustakaan.jpg" alt="Logo Perpustakaan">
+            <h1>Perpustakaan Mus'ab</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#transaksi">Transaksi</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="beranda" class="welcome">
+            <h2>Selamat Datang di Perpustakaan Mus'ab</h2>
+            <p>Temukan berbagai koleksi buku digital kami</p>
+            <div style="max-width: 800px; margin: 3rem auto; text-align: left;">
+                <h3 style="color: #1a237e; margin-bottom: 1.5rem;">Panduan Penggunaan Website</h3>
+                
+                <div style="background: #f5f5f5; padding: 2rem; border-radius: 8px;">
+                    <ol style="list-style-position: inside; line-height: 1.6;">
+                        <li style="margin-bottom: 1rem;">
+                            <strong>Login ke Akun Anda</strong><br>
+                            Klik menu "Login" di bagian atas dan masukkan username serta password Anda. Jika belum memiliki akun, silakan hubungi petugas perpustakaan.
+                        </li>
+                        
+                        <li style="margin-bottom: 1rem;">
+                            <strong>Cari Buku</strong><br>
+                            Setelah login, Anda dapat menjelajahi koleksi buku digital kami yang tersedia dalam berbagai kategori dan genre.
+                        </li>
+                        
+                        <li style="margin-bottom: 1rem;">
+                            <strong>Peminjaman Buku</strong><br>
+                            Pilih buku yang ingin Anda pinjam. Sistem akan mencatat transaksi peminjaman secara otomatis.
+                        </li>
+                        
+                        <li style="margin-bottom: 1rem;">
+                            <strong>Lihat Transaksi</strong><br>
+                            Kunjungi menu "Transaksi" untuk melihat riwayat peminjaman dan pengembalian buku Anda.
+                        </li>
+                        
+                        <li style="margin-bottom: 1rem;">
+                            <strong>Pengembalian Buku</strong><br>
+                            Kembalikan buku sesuai dengan tanggal yang telah ditentukan untuk menghindari denda keterlambatan.
+                        </li>
+                        
+                        <li style="margin-bottom: 1rem;">
+                            <strong>Kelola Profil</strong><br>
+                            Akses menu "Profil" untuk mengubah informasi akun dan melihat status keanggotaan Anda.
+                        </li>
+                    </ol>
+                </div>
+                
+                <div style="background: #e8eaf6; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                    <h4 style="color: #1a237e; margin-bottom: 1rem;">Perlu Bantuan?</h4>
+                    <p>Jika Anda mengalami kesulitan dalam menggunakan website ini, silakan hubungi petugas perpustakaan melalui:</p>
+                    <ul style="list-style: none; margin-top: 0.5rem;">
+                        <li>📧 Email: musabsoif125@gmail.com</li>
+                        <li>📞 Telepon: 089623388901</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="transaksi" style="display: none;">
+            <h2>Daftar Transaksi</h2>
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Nama</th>
+                        <th>Id</th>
+                        <th>Jumlah</th>
+                        <th>Kategori</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>05/01/25</td>
+                        <td>Temen Mus'ab</td>
+                        <td>05461235</td>
+                        <td>3</td>
+                        <td>Peminjaman</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>06/01/25</td>
+                        <td>Sahabat Mus'ab</td>
+                        <td>05461234</td>
+                        <td>1</td>
+                        <td>Pengembalian</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>08/01/25</td>
+                        <td>Sodara Mus'ab</td>
+                        <td>05461237</td>
+                        <td>2</td>
+                        <td>Peminjaman</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: right; margin-top: 1rem;">
+                <button onclick="saveTransactions()" style="background: #1a237e; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer;">
+                    Simpan
+                </button>
+            </div>
+        </section>
+
+        <section id="login" style="display: none;">
+            <form class="login-form" onsubmit="return validateForm(event)">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="profil" style="display: none ;">
+            <h2>Profil Aplikasi</h2>
+            <p>Aplikasi Perpustakaan Digital adalah sistem manajemen perpustakaan modern yang memudahkan pengguna dalam meminjam dan mengelola buku.</p>
+           
+            <h3 style="color: #1a237e; margin-bottom: 1rem;">Fitur Utama</h3>            
+            <div style="background: #f5f5f5; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                <ul style="list-style: none;">
+                   
+                    <li style="margin-bottom: 1rem;">
+                        <strong>🔍 Pencarian Cepat</strong><br>
+                        Sistem pencarian yang mudah dan efisien membantu Anda menemukan buku yang diinginkan dengan cepat.
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>📱 Akses Mobile</strong><br>
+                        Akses perpustakaan dari perangkat mobile Anda untuk kenyamanan maksimal.
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>📊 Manajemen Transaksi</strong><br>
+                        Pantau dan kelola semua transaksi peminjaman dan pengembalian buku dengan mudah.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Navigasi
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.querySelectorAll('main section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                document.getElementById(targetId).style.display = 'block';
+            });
+        });
+
+        // Form
+        function validateForm(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            if (!username || !password) {
+                alert('Semua field harus diisi!');
+                return false;
+            }
+            alert('Login berhasil!');
+            return false;
+        }
+    </script>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Perpustakaan Mus'ab. Hak Cipta Dilindungi.</p>
+    </div>
+</body>
+        </div>
+    </footer>
+</html>
